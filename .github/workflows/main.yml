@@ -5,8 +5,8 @@ jobs:
   main:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
-        fail-fast: false
         node: [18, 20]
     steps:
       - name: "1. Checkout code"
